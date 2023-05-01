@@ -4,6 +4,9 @@ const repeatString = function(string, num) {
     newString += string
     num--
   }
+  if (num <0){
+    return "ERROR"
+  }
   return newString
 };
 
