@@ -3,7 +3,11 @@ const sumAll = function(arg1, arg2) {
   let newArray = []
   let fullArray = []
   for (let i = 0; i <arguments.length; i++){
-    newArray[i] = arguments[i]
+    if (arguments[i] < 0){
+      return "ERROR"
+    } else {
+      newArray[i] = arguments[i]
+    }
   }
   newArray.sort((a,b) => a-b)
 
