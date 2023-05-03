@@ -3,7 +3,7 @@ const sumAll = function(arg1, arg2) {
   let newArray = []
   let fullArray = []
   for (let i = 0; i <arguments.length; i++){
-    if (arguments[i] < 0 || !Number.isInteger(arguments[1])){
+    if (arguments[i] < 0 || !Number.isInteger(arguments[i])){
       return "ERROR"
     } else {
       newArray[i] = arguments[i]
