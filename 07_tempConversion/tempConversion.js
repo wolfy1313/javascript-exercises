@@ -1,11 +1,11 @@
 const convertToCelsius = function(degrees) {
-  let answer = (degrees - 32) * 1.8
-  return Math.round(answer)
+  let answer = (degrees - 32) * .556
+  return parseFloat(answer.toFixed(1))
 };
 
 const convertToFahrenheit = function(degrees) {
-  let answer = degrees * 1.8 + 32
-  return Math.round(answer)
+  let answer = (degrees * 1.8) + 32
+  return parseFloat(answer.toFixed(1))
 };
 
 // Do not edit below this line
